@@ -1,0 +1,620 @@
+/* 
+ *	Basic CSS Reset
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ul {
+	list-style-type: none;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #0099cc;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: 1.0em;
+}
+
+h3, h4, h5, h6 {
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.0em;
+}
+
+p, span, ul, body, input, select, label, legend {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.0em;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
+/*
+ *	Text Settings
+ */
+h1 {
+	font-size: 40px;
+	margin: 20px 10px 0 10px;
+}
+h2 {
+	font-size: 20px;
+	margin: 0 10px 20px 10px;
+}
+h3 {
+	font-size: 1.8em;
+	margin-bottom: 1em;
+	font-weight: bold;
+	color: #000066;
+	padding-bottom: 0.3em;
+	border-bottom: 2px solid #f2f2f2;
+}
+h4 {
+	color: #000066;
+}
+p {
+	font-size: 0.9em;
+	line-height: 1.7em;
+}
+p + p {
+	margin-top: 1.5em;
+}
+h1.error {
+	font-size: 12em;
+	text-align: center;
+	margin: -0.3em 0 40px 0;
+	color: #a0a0a0;
+}
+sup, sub {
+	font-size: 0.6em;
+	vertical-align: baseline;
+	position: relative;	
+}
+sup {
+	top: -0.65em;
+}
+sub {
+	top: 0.2em;
+}
+h4 {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-top: 1.4em;
+	margin-bottom: 0.8em;
+	padding: 0.1em 0;
+}
+/*
+ *	List / Menu Settings
+ */
+ 
+.footer-links, .return-link {
+	font-size: 0.8em;
+}
+.footer-links {
+	border-top: 2px solid #f2f2f2;
+	margin-top: 28px;
+	padding-top: 1.2em;
+}
+.footer-links > ul {
+	float: right;
+}
+.footer-links ul > li {
+	display: inline;
+}
+.footer-links ul > li:after {
+  content: " \2015 "; }
+.footer-links ul > li:last-child:after {
+  content: ""; }
+  
+.return-link {
+	float: right;
+}
+/*
+ *	Asthetic Settings
+ */
+body {
+	background: #f0f0f0;
+	border-top: 5px solid #000066;
+}
+#contentContainer {
+	background: #fff;
+}
+.copyright {
+	display: block;
+	text-align: center;
+	margin: 2em 0;
+	font-size: 0.6em;
+	color: #a0a0a0;
+}
+.small_header {
+	color: #a0a0a0;
+}
+
+/*
+ *	Layout Settings
+ */
+#mainContainer {
+	width: 800px;
+	margin: 0 auto;
+}
+#contentContainer {
+	padding: 28px;
+	overflow:hidden;
+}
+
+/*
+ *	Form Settings
+ */
+.button {
+	font-size: 1em;
+	border: none;
+	background: transparent;
+	color: #0099cc;
+	overflow:visible;
+}
+.button:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+form.simple fieldset {
+	border: none;
+}
+form.simple legend {
+	display: none;
+}
+form.simple {
+	margin: 2em 0;
+}
+form.simple p {
+	overflow: hidden;
+}
+form.simple label {
+	display: block;
+	width: 300px;
+	text-align: right;
+	float: left;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.25em;
+}
+form.simple .field, form.simple .button, form.simple span.form-data {
+	float: left;
+	margin-left: 10px;
+	font-size: 1.0em;
+}
+form.simple span.form-data {
+	line-height: 1.25em;
+}
+form.simple .field {
+	height: 2em;
+	border: 1px solid #ccc;
+	box-sizing:content-box;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+}
+form.simple select.field {
+	width: 200px;
+}
+form.simple input.field {
+	padding: 0px 3px;
+	width: 194px;
+}
+form.simple label > span {
+	display: block;
+	width: 300px;
+	text-align: right;
+	font-size: 0.7em;
+	font-weight: normal;
+	line-height: 1.25em;
+}
+
+.button {
+	font-size: 1em;
+	border: none;
+	background: transparent;
+	color: #0099cc;
+	overflow:visible;
+}
+.button:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*
+ *	Ticketing Form
+ */
+form.tickets {
+	margin: 1.4em 0;
+}
+form.tickets fieldset {
+	margin: 0.5em 0;
+	border: none;
+}
+form.tickets legend {
+	font-size: 1.1em;
+	color: #606060;
+	width: 190px;
+	float: left;
+	text-align: right;
+	text-transform: lowercase;
+	padding-right: 10px;
+	padding-top: 0.4em;
+}
+form.tickets fieldset.ticket legend {
+	color: #000066;
+}
+form.tickets legend > strong {
+	display: block;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+form.tickets fieldset > div {
+	overflow: hidden;
+}
+form.tickets p {
+	overflow: hidden;
+}
+form.tickets fieldset {
+	padding: 0.6em;
+}
+form.tickets fieldset#payment {
+	background: #f3f3f3;
+}
+form.tickets fieldset.even {
+	background: #f8f8f8;
+}
+form.tickets fieldset.odd {
+	background: #fafafa;
+}
+form.tickets fieldset p {
+	padding: 0.5em;
+	margin: 0.3em;
+}
+form.tickets fieldset p:hover {
+	background: #f4f4f4;
+}
+form.tickets fieldset p.field-focus {
+	background: #e5e5e5;
+}
+form.tickets fieldset p.field-error > label {
+	color: #da0000;
+}
+form.tickets fieldset p > label {
+	display: block;
+	font-weight: bold;
+	font-size: 0.8em;
+	line-height: 1.25em;
+	float: left;
+}
+form.tickets fieldset p > label > span {
+	display: block;
+	font-size: 0.9em;
+	font-weight:normal;
+}
+form.tickets .field, form.tickets .option-field, form.tickets span.form-data {
+	float: right;
+	font-size: 0.85em;
+}
+form.tickets .field {	
+	height: 2em;
+	border: 1px solid #ccc;
+	box-sizing:content-box;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+}
+form.tickets input.field {
+	padding: 0px 3px;
+	width: 254px;
+}
+form.tickets select.field {
+	width: 260px;
+}
+form.tickets .option-field {
+	width: 13px;
+	height: 13px;
+	margin-right: 247px;
+}
+form.tickets span.form-data {
+	display: block;
+	width: 263px;
+	line-height: 1.25em;
+	text-align: left;
+}
+form.tickets span.form-data > label {
+	margin: 0 1.2em 0 0.3em;
+}
+form.tickets span.form-data > input {
+	margin-left: 2px;
+}
+form.tickets p.note {
+	font-size: 0.8em;
+}
+form.tickets p.nofield {
+	padding: 0.5em;
+	margin: 0 0 0 210px;
+	font-size: 0.8em;
+}
+form.tickets fieldset p > span.error-message {
+	color: #da0000;
+	font-size: 0.8em;
+	margin: 0.3em 0;
+	width: 260px;
+	float: right;
+	display:none;
+}
+form.tickets fieldset p.field-error > span.error-message {
+	display: block !important;
+}
+
+form.confirm p {
+	overflow: hidden;
+	padding: 0.4em;
+}
+form.confirm p > label {
+	margin-left: 0.5em;
+}
+form.confirm p > input#back {
+	float: left;
+}
+form.confirm p > input#confirm {
+	float: right;
+}
+form.confirm p.field-error {
+	background: #ffdddd;
+}
+form.confirm p.field-error > label {
+	color: #da0000;
+}
+
+/*
+ *	Invoice table
+ */
+ul.invoice {
+	width: 100%;
+}
+ul.invoice > li {
+	overflow: hidden;
+	padding: 0.3em 0 0.6em 0;
+	border-top: 1px solid #a0a0a0;
+}
+ul.invoice > li + li {
+	padding-top: 0.6em;
+}
+ul.invoice > li > span, ul.invoice > li > ul > li > span {
+	margin: 0.3em 0;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+}
+ul.invoice > li > span > h5, ul.invoice > li > span > span {
+	font-weight: bold;
+}
+ul.invoice h5 {
+	float: left;
+}
+ul.invoice span > span {
+	float: right;
+}
+ul.invoice > li > ul {
+	width: 100%;
+	float: left;
+}
+ul.invoice > li > ul > li > span > h5 {
+	padding-left: 0.8em;
+}
+ul.invoice > li > ul > li > span {
+	font-size: 0.9em;
+}
+ul.invoice > li.summary {
+	background: #f5f5f5;
+	padding: 0.2em 0;
+	border-bottom: 1px solid #a0a0a0;
+}
+
+
+
+/*
+ *	Simple table
+ */
+table.simple {
+	border-collapse: separate;
+	width:100%;
+	font-size: 0.9em;
+}
+table.simple > thead > tr > th, table.simple > thead > tr > td {
+	border-bottom: 2px solid #c0c0c0;
+	line-height: 1.8em;
+}
+table.simple td, table.simple th {
+	text-align: left;
+}
+table.simple > tbody th {
+	font-weight: normal;
+}
+table.simple > tbody > tr:hover td, table.simple > tbody > tr:hover th {
+	background: #f2f2f2;
+}
+table.simple > tbody > tr > th, table.simple > tbody > tr > td {
+	height: 3.6em;
+	border-bottom: 1px dashed #a0a0a0;
+}
+/*
+ *	Simple Details
+ */
+ul.simple-details {
+	margin: 3em 0;
+}
+ul.simple-details > li {
+	margin: 1em 0;
+	overflow: hidden;
+}
+ul.simple-details > li > h6, ul.simple-details > li > span {
+	display: block;
+	float: left;
+}
+ul.simple-details > li > h6 {
+	font-size: 0.7em;
+	width: 250px;
+	text-align: right;
+	margin-top: 0.28em;
+	text-transform: uppercase;
+}
+ul.simple-details > li > span {
+	font-size: 0.9em;
+	margin-left: 10px;
+}
+/*
+ *	Status
+ */
+ul.status {
+	overflow: hidden;
+}
+ul.status > li {
+	float: left;
+	width: 175px;
+	margin: 0px 4px;
+}
+
+ul.status > li > h5 {
+	float: left;
+	font-size: 3em;
+	padding: 0.1em 0.35em;
+	font-weight: bold;
+}
+
+ul.status > li > span {
+	float: left;
+	font-size: 1em;
+	padding-top: 0.875em;
+	display: block;
+}
+
+ul.status > li > span > em {
+	margin-top: 0.3em;
+	display: block;
+	font-size: 0.8em;
+}
+
+ul.status > li.complete {
+	background: #e0e0e0;
+	color: #808080;
+	border-top: 6px solid #000066;
+}
+ul.status > li.current {
+	background: #eaeaea;
+	color: #000;
+	border-top: 6px dashed #000066;
+}
+ul.status > li.future {
+	background: #f0f0f0;
+	color: #a0a0a0;
+	border-top: 6px dashed #aaaaaa;
+}
+/*
+ *	Sale timer
+ */
+div#sale {
+	margin: 2.5em 0;
+	text-align: center;
+}
+div#sale span {
+	font-size: 0.9em;
+}
+div#sale h4 {
+	margin: 1.2em 0 0.3em 0;
+}
+div#sale em {
+	font-size: 0.9em;
+}
+
+/*
+ *	TOC
+ */
+ul.definitions {
+	font-size: 0.9em;
+}
+ul.definitions > li {
+	margin-left: 35px;
+	padding: 5px;
+	overflow: hidden;
+}
+ul.definitions > li > em {
+	font-style: normal;
+	padding-right: 15px;
+	width: 200px;
+	float: left;
+}
+ul.definitions > li > span {
+	width: 480px;
+	float: left;
+	display: block;
+}
+ul.definitions > li:nth-child(odd) {
+	background: #f0f0f0;
+}
+ul.toc {
+	font-size: 0.9em;
+}
+ul.toc > li {
+	list-style: square;
+	margin: 1.5em 0 1.5em 35px;
+	line-height: 1.7em;
+}
+div.toc p {
+	margin-left: 35px;
+}
+div.toc h4 > span {
+	width: 35px;
+	display: inline-block;
+}
+ol.toc-nav {
+	font-size: 0.9em;
+}
+ol.toc-nav li {
+	margin: 0.4em 0 0.4em 35px;
+}
+
+/*
+ *	FAQ
+ */
+ul.faq-nav {
+	font-size: 0.9em;
+}
+ul.faq-nav > li {
+	margin: 0.8em 0 0.8em 2em;
+}
+ul.faq > li {
+	list-style: square;
+	margin: 1.5em 0 1.5em 2em;
+	font-size: 0.9em;
+}
+ul.faq > li > h5 {
+	font-weight: bold;
+	margin-bottom: 0.8em;
+}
+ul.faq > li > p {
+	font-size: 1em;
+}
+ul.faq > li > p + p {
+	margin-top: 0.8em;
+}
