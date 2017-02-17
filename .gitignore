@@ -1,3 +1,4 @@
 templates/compile
 templates/cache
 config.ini
+*.swp
