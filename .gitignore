@@ -1,4 +1,4 @@
-templates/compile
-templates/cache
-config.ini
 *.swp
+tickets/compile
+tickets/cache
+config.ini

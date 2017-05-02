@@ -70,6 +70,9 @@ function lookupIBIS($crsid) {
 	if ($crsid == 'ms2335') {
 		$r['college'] = 18; // King's (not on Lookup)
 		return $r;
+	} elseif ($crsid = 'els63') {
+		$r['college'] = 18;
+		return $r;
 	}
 	
 	if ($r['college'] != $config['general']['college'])
